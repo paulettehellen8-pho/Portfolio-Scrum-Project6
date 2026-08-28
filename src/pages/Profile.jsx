@@ -332,11 +332,7 @@ const ProfileDetails = () => (
       <div className="profile-details__layout">
         {/* Avatar */}
         <div className="profile-details__image-wrapper">
-          <img
-            src="https://i.pinimg.com/1200x/3c/ca/6c/3cca6c3216076a483f5c24cffcaef97d.jpg"
-            alt="John Doe"
-            className="profile-details__image"
-          />
+          <Image src="https://i.pinimg.com/1200x/3c/ca/6c/3cca6c3216076a483f5c24cffcaef97d.jpg"/>
         </div>
 
         {/* Info */}
