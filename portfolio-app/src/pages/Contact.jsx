@@ -1,4 +1,4 @@
-import { useState } from " react";
+import { useState } from "react";
 
 export default function Contact() {
    const [formData, setFormData] = useState({
@@ -82,7 +82,8 @@ export default function Contact() {
                <input
                   type="text"
                   name="name"
-                  value={handleChange}
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Jane Doe"
                   required
                   className="contact-form__input"

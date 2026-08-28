@@ -3,7 +3,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import BuildFooter from "./pages/BuildFooter";
 import Profile from "./pages/Profile";
+
+
 export default function App() {
    return (
       <div>
@@ -21,6 +24,8 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
          </Routes>
+
+         <BuildFooter />
       </div>
    );
 }
