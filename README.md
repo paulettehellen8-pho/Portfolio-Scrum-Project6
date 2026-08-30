@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio-Scrum-Project6
 
 A collaborative React portfolio site built as part of a Scrum simulation lab — combining Jira sprint tracking, GitHub feature branches, and real merge-conflict resolution practice.
