@@ -1,4 +1,4 @@
-function Projects(){
-    
+function Projects() {
+   
 }
 export default Projects;
