@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../index.css';
+import '../index.css';
 
 export default function Home() {
 	const cards = [
-		{ title: 'TMRo', body: 'keep Creating. Quietly. Stealth' },
+		{ title: 'JDoe', body: 'keep Creating. Quietly. Stealth' },
 		{ title: 'Project', body: 'My work lives at the intersection of form, function...' },
 		{ title: 'Case Study', body: 'Systems, interfaces and subtle motion' },
 		{ title: 'Note', body: 'Minimal, calm and intentional' },
@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div className="home-root">
 			<header className="home-header">
-				<div className="home-logo">TMRo</div>
+				<div className="home-logo">John Doe</div>
 				<nav className="home-nav">
 					{['Home', 'About', 'Profile'].map((n) => (
 						<a key={n} href={'#' + n.toLowerCase()} className="home-nav-link">
@@ -39,7 +39,7 @@ export default function Home() {
 
 					<aside className="home-typography">
 						<div className="role">Web Designer</div>
-						<h1 className="hero-name">TOMORO SUGAWARA</h1>
+						<h1 className="hero-name">John Doe</h1>
 						<h2 className="hero-sub">Design Profile</h2>
 						<p className="hero-desc">I craft calm, considered interfaces and brand experiences rooted in simplicity. My work lives at the intersection of form, function and subtle motion.</p>
 					</aside>
