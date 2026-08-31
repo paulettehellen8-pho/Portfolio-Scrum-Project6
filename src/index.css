@@ -1,3 +1,9 @@
+/* ==========================================================================
+   INDEX.CSS — STYLE STUB
+   Every class name currently used in the React components is listed below,
+   grouped by component, with an empty rule   
+   ========================================================================== */
+
 /* ===== ROOT VARIABLES ===== */
 :root {
   --color-primary: #355240ff;
@@ -988,4 +994,259 @@ body {
   .footer__nav-link { flex-direction: column; align-items: flex-start; gap: 5px; padding: 20px; }
   .footer__nav-link span { font-size: 24px; }
   .footer__bottom { flex-direction: column; text-align: center; margin-top: 40px; }
+}
+
+/* Home.css — styles for the portfolio homepage */
+
+.home-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg,#f2ece4 0%, #e8eae3 50%, #d4dcd2 100%);
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #17261d;
+}
+
+/* Header */
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-logo {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2C4235;
+}
+
+.home-nav { display:flex; gap:0.5rem; }
+.home-nav-link {
+  background: #2C4235;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 180ms ease, opacity 180ms ease;
+}
+.home-nav-link:hover { opacity: 0.9; }
+
+/* Main hero container */
+.home-main { padding: 1.5rem; }
+.home-hero-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  background: rgba(255,255,255,0.42);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Left showcase */
+.home-showcase {
+  position: relative;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  padding: 2rem;
+  min-height: 320px;
+  display:flex; align-items:center; justify-content:center;
+  background: radial-gradient(ellipse at top left, #1f332b 0%, #203829 40%, transparent 70%);
+}
+
+.home-showcase .showcase-overlay {
+  position:absolute; inset:0;
+  filter: blur(28px);
+  opacity:0.6;
+  background: linear-gradient(135deg, rgba(44,66,53,0.85), rgba(24,40,33,0.6));
+}
+
+/* Isometric container */
+.home-isometric {
+  position: relative;
+  width: 80%;
+  height: 75%;
+  transform: perspective(1200px) rotateX(55deg) rotateZ(-35deg);
+}
+
+.home-iso-card {
+  position: absolute;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 30px rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 220px;
+}
+
+.home-iso-card .iso-card-title { font-size: 0.95rem; font-weight:600; }
+.home-iso-card .iso-card-body { font-size: 0.78rem; margin-top:0.5rem; line-height:1.15; opacity:0.9; }
+
+/* Position the iso cards specifically */
+.home-isometric .home-iso-card:nth-child(1) { left:5%; top:8%; transform: rotate(-6deg); width:240px; height:160px; }
+.home-isometric .home-iso-card:nth-child(2) { left:30%; top:22%; transform: rotate(3deg); width:260px; height:172px; }
+.home-isometric .home-iso-card:nth-child(3) { left:52%; top:56%; transform: rotate(-3deg); width:220px; height:140px; }
+.home-isometric .home-iso-card:nth-child(4) { left:68%; top:36%; transform: rotate(6deg); width:200px; height:128px; }
+
+/* Right typography column */
+.home-typography {
+  padding: 1rem;
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+}
+.role {
+  font-size: 0.95rem; color: #6b7a6f; letter-spacing: 0.15em; text-transform: uppercase;
+}
+.hero-name {
+  margin-top:0.6rem; margin-bottom:0.6rem;
+  font-size: 2.5rem; color: #2C4235; font-weight:300; letter-spacing:0.12em; text-transform:uppercase; line-height:1;
+}
+.hero-sub { font-size:1.6rem; color:#2C4235; font-weight:300; }
+.hero-desc { margin-top:1rem; color:#3b4a3f; max-width:40ch; }
+
+/* Responsive layout for larger screens */
+@media (min-width: 992px) {
+  .home-hero-card { grid-template-columns: repeat(12, 1fr); padding: 2rem; }
+  .home-showcase { grid-column: 1 / span 7; min-height:420px; }
+  .home-typography { grid-column: 8 / span 5; padding-left:2rem; }
+}
+
+@media (max-width: 520px) {
+  .home-logo { font-size:1.1rem; }
+  .home-iso-card { width:180px; }
+  .hero-name { font-size:1.8rem; }
+}
+
+
+/* --------------------------------------------------------------------------
+   Contact.jsx
+   -------------------------------------------------------------------------- */
+
+.contact-page {
+}
+
+.contact-page__divider {
+}
+
+.contact-form {
+}
+
+.contact-form__group {
+}
+
+.contact-form__label-row {
+}
+
+.badge_required {
+}
+
+.contact-form__label {
+}
+
+.contact-form__options {
+}
+
+.option-pill {
+}
+
+.option-pill__radio {
+}
+
+.option-pill__text {
+}
+
+.contact-form__input {
+}
+
+.contact-form__textarea {
+}
+
+.btn_submit {
+}
+
+.btn__icon {
+}
+
+/* --------------------------------------------------------------------------
+   BuildFooter.jsx
+   -------------------------------------------------------------------------- */
+
+.build-footer {
+}
+
+.build-footer__grid {
+}
+
+.build-pipeline {
+}
+
+.build-pipeline__title {
+}
+
+.build-pipeline__subtitle {
+}
+
+.build-pipeline__steps {
+}
+
+.build-pipeline__step {
+}
+
+.build-pipeline__step-number {
+}
+
+.build-pipeline__step-label {
+}
+
+.build-pipeline__connector {
+}
+
+.build-pipeline__tickets {
+}
+
+.ticket-pill {
+}
+
+.terminal-card {
+}
+
+.terminal-card__line {
+}
+
+.terminal-card__prompt {
+}
+
+.build-footer__divider {
+}
+
+.nav-pills {
+}
+
+.nav-pill {
+}
+
+.nav-pill__title {
+}
+
+.nav-pill__subtitle {
+}
+
+.nav-pill__icon {
+}
+
+.build-footer__bottom {
+}
+
+.build-footer__copyright {
+}
+
+.build-footer__stack {
 }
