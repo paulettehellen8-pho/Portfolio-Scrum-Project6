@@ -16,6 +16,7 @@ export default function Home() {
 				<nav className="home-nav">
 					{['Home', 'About', 'Profile'].map((n) => (
 						<a key={n} href={n.toLowerCase()} className="home-nav-link">
+						<a key={n} href={'#' + n.toLowerCase()} className="home-nav-link">
 							{n}
 						</a>
 					))}

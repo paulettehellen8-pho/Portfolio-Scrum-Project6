@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route /*Link*/ } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -6,17 +6,16 @@ import Contact from "./pages/Contact";
 import BuildFooter from "./pages/BuildFooter";
 import Profile from "./pages/Profile";
 
-
 export default function App() {
    return (
       <div>
-         <nav>
+         {/* <nav>
             <Link to="/">Home</Link> | <Link to="/about">About</Link> |{" "}
             <Link to="/projects">Projects</Link> |{" "}
             <Link to="/contact">Contact</Link> |{" "}
             <Link to="/profile">Profile</Link>
          </nav>
-         <hr />
+         <hr /> */}
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
